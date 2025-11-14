@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextJS Assignment - CSI 331 Web Development
+
+**Author:** Farrar, Landon  
+**Assignment:** Assignment 8 - NextJS with React Components  
+**Course:** CSI 331 Web Development  
+
+## Project Description
+
+This is a NextJS application featuring three main components:
+
+1. **Counter Components** - Two interactive counters with different increment values (+1 and +2), custom button colors, and reset functionality when exceeding 10
+2. **GitHub Repository Link** - Link to the project's source code repository
+3. **FakeStore API Integration** - A searchable product interface using the FakeStore API with real-time filtering
+
+## Live Demo
+
+- **Production URL:** `331vms.cs.montana.edu:3017`
+- **Store Page:** `331vms.cs.montana.edu:3017/store`
+
+## GitHub Repository
+
+[View Source Code](https://github.com/lfarrar48/csci-331-web-development-NextJS)
+
+## Technology Stack
+
+- **NextJS 16** - React framework for production
+- **React 19** - Frontend library with hooks (useState, useEffect)
+- **Tailwind CSS v4** - Utility-first CSS framework for styling
+- **TypeScript** - Type-safe JavaScript
+- **FakeStore API** - External API for product data
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn package manager
 
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/lfarrar48/csci-331-web-development-NextJS.git
+cd csci-331-web-development-NextJS
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Production Deployment
 
-To learn more about Next.js, take a look at the following resources:
+1. Build the application:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Start the production server:
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application will run on port 3017 for production deployment.
 
-## Deploy on Vercel
+## Assignment Requirements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✅ **Counter Components (4 points)**
+- Button to increment and display current count
+- Different increment amounts (+1 and +2) 
+- Reset to 0 when exceeding 10
+- Props for button background color styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ **GitHub Component (2 points)**  
+- Paragraph with link to GitHub repository
+- Properly structured React site with .gitignore
+
+✅ **FakeStore API Component (3 points)**
+- Table displays 20 products with title, image, price
+- Search bar filters products by substring matching
+
+## Final Project
+
+For my final project, I am building the Montana State Soccer club team website with an emphasis on Tailwind CSS integration. This project will showcase modern web design principles using Tailwind's utility-first approach to create a responsive, professional team website with player profiles, game schedules, and team statistics.
